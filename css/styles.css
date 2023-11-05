@@ -62,17 +62,14 @@ img {
 
 /* Шапка */
 
-.header {
-  border-bottom: 1px solid var(--header-underline-color);
-}
-
 .header__container {
   display: flex;
   align-items: center;
+  border-bottom: 1px solid var(--header-underline-color);
 }
 
 .logo {
-  margin-right: 93px;
+  margin: 0;
   padding-top: 24px;
   padding-bottom: 25px;
 
@@ -86,16 +83,17 @@ img {
   color: var(--accent-color);
 }
 
-.logo__studio-black {
+.logo__text--black {
   color: var(--logo-black-color);
+  margin-right: 93px;
 }
 
 .nav__list {
   display: flex;
 }
 
-.nav__item + .nav__item {
-  margin-left: 50px;
+.nav__item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .nav__link {
@@ -113,18 +111,21 @@ img {
   transition: color 250ms var(--hover-focus-time);
 }
 
-.nav__link:hover,
+.nav__link:hover {
+  color: var(--accent-color);
+}
+
 .nav__link:focus {
   color: var(--accent-color);
 }
 
-.nav__link.current {
+.nav__link--current {
   position: relative;
 
   color: var(--accent-color);
 }
 
-.nav__item > .current::after {
+.nav__item .nav__link--current::after {
   content: '';
   display: block;
   position: absolute;
