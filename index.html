@@ -21,35 +21,37 @@
     <!-- Шапка -->
 
     <header class="header">
-      <div class="container">
-        <a href="./index.html" class="logo"
-          >Web<span class="logo-studio-black">Studio</span></a
+      <div class="header__container container">
+        <a class="logo" href="./index.html"
+          >Web<span class="logo__studio-black">Studio</span></a
         >
 
         <nav class="nav">
-          <ul class="list">
-            <li class="item">
-              <a href="./index.html" class="link current">Студія</a>
+          <ul class="nav__list list">
+            <li class="nav__item">
+              <a class="nav__link current" href="./index.html">Студія</a>
             </li>
-            <li class="item">
-              <a href="./portfolio.html" class="link">Портфоліо</a>
+            <li class="nav__item">
+              <a class="nav__link" href="./portfolio.html">Портфоліо</a>
             </li>
-            <li class="item"><a href="" class="link">Контакти</a></li>
+            <li class="nav__item">
+              <a class="nav__link" href="">Контакти</a>
+            </li>
           </ul>
         </nav>
 
-        <ul class="info-list list">
-          <li class="info-item">
-            <a class="info-link link" href="mailto:info@devstudio.com">
-              <svg class="info-icon" width="16" height="12">
+        <ul class="info list">
+          <li class="info__item">
+            <a class="info__link link" href="mailto:info@devstudio.com">
+              <svg class="info__icon" width="16" height="12">
                 <use href="./images/icons/sprite.svg#envelope"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li class="info-item">
-            <a class="info-link link" href="tel:380961111111">
-              <svg class="info-icon" width="10" height="16">
+          <li class="info__item">
+            <a class="info__link link" href="tel:380961111111">
+              <svg class="info__icon" width="10" height="16">
                 <use href="./images/icons/sprite.svg#smartphone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -62,7 +64,7 @@
     <main>
       <!-- Герой -->
 
-      <section class="section hero overlay">
+      <section class="hero section overlay">
         <div class="container">
           <h1 class="title">Ефективні рішення для вашого бізнесу</h1>
           <button type="button" class="hero-button data-modal-open">
