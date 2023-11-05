@@ -68,66 +68,67 @@
 
       <section class="hero section overlay">
         <div class="container">
-          <h1 class="title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="hero-button data-modal-open">
+          <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
+
+          <button class="hero__btn modal-window-open-btn" type="button">
             Замовити послугу
           </button>
 
           <div class="backdrop is-hidden">
-            <div class="data-modal">
-              <button class="data-modal-close" type="button">
-                <svg class="data-modal-close-icon" width="18" height="18">
+            <div class="modal-window">
+              <button class="modal-window-close-btn" type="button">
+                <svg class="modal-window-close-icon" width="18" height="18">
                   <use href="./images/icons/sprite.svg#icon-close"></use>
                 </svg>
               </button>
 
               <form class="modal-form">
-                <b class="form-title">
+                <b class="modal-form__title">
                   Залиште свої дані, ми вам передзвонимо
                 </b>
 
-                <label class="form-field"
-                  ><span class="form-field-label">Ім'я</span>
+                <label class="modal-form__field"
+                  ><span class="modal-form__label">Ім'я</span>
                   <input
-                    class="form-field-input"
+                    class="modal-form__input"
                     type="text"
                     name="user-name"
                   />
-                  <svg class="form-field-icon" width="18" height="18">
+                  <svg class="modal-form__icon" width="18" height="18">
                     <use href="./images/icons/sprite.svg#person-black"></use>
                   </svg>
                 </label>
 
-                <label class="form-field"
-                  ><span class="form-field-label">Телефон</span>
+                <label class="modal-form__field"
+                  ><span class="modal-form__label">Телефон</span>
                   <input
-                    class="form-field-input"
+                    class="modal-form__input"
                     type="tel"
                     name="user-phone"
                   />
-                  <svg class="form-field-icon" width="18" height="18">
+                  <svg class="modal-form__icon" width="18" height="18">
                     <use href="./images/icons/sprite.svg#phone-black"></use>
                   </svg>
                 </label>
 
-                <label class="form-field"
-                  ><span class="form-field-label">Пошта</span>
+                <label class="modal-form__field"
+                  ><span class="modal-form__label">Пошта</span>
                   <input
-                    class="form-field-input"
+                    class="modal-form__input"
                     type="email"
                     name="user-email"
                   />
-                  <svg class="form-field-icon" width="18" height="18">
+                  <svg class="modal-form__icon" width="18" height="18">
                     <use href="./images/icons/sprite.svg#email-black"></use>
                   </svg>
                 </label>
 
                 <!-- Textarea -->
 
-                <label class="form-field"
-                  ><span class="form-field-label">Коментар</span>
+                <label class="modal-form__field"
+                  ><span class="modal-form__label">Коментар</span>
                   <textarea
-                    class="form-textarea"
+                    class="modal-form__textarea"
                     name="user-comment"
                     placeholder="Введіть текст"
                   ></textarea>
@@ -135,22 +136,26 @@
 
                 <!-- Checkbox -->
 
-                <label class="checkbox-label">
+                <label class="modal-form__policy">
                   <input
-                    class="checkbox visually-hidden"
+                    class="modal-form__checkbox visually-hidden"
                     type="checkbox"
                     name="user-contract"
                   />
 
-                  <span class="checkbox-icon">
-                    <svg class="icon-check" width="16" height="15">
+                  <span class="modal-form__checkbox-custom">
+                    <svg
+                      class="modal-form__checkbox-icon"
+                      width="16"
+                      height="15"
+                    >
                       <use href="./images/icons/sprite.svg#icon-check"></use>
                     </svg>
                   </span>
 
                   Погоджуюся з розсилкою та приймаю
                   <a
-                    class="checkbox-link"
+                    class="modal-form__checkbox-link"
                     href=""
                     target="_blank"
                     rel="noopener noreferrer"
@@ -158,7 +163,9 @@
                   >
                 </label>
 
-                <button class="modal-form-btn" type="submit">Відправити</button>
+                <button class="modal-form__btn" type="submit">
+                  Відправити
+                </button>
               </form>
             </div>
           </div>

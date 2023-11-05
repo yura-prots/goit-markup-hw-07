@@ -62,10 +62,13 @@ img {
 
 /* Шапка */
 
+.header {
+  border-bottom: 1px solid var(--header-underline-color);
+}
+
 .header__container {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid var(--header-underline-color);
 }
 
 .logo {
@@ -125,7 +128,7 @@ img {
   color: var(--accent-color);
 }
 
-.nav__item .nav__link--current::after {
+.nav__link--current::after {
   content: '';
   display: block;
   position: absolute;
@@ -167,7 +170,10 @@ img {
   transition: color 250ms var(--hover-focus-time);
 }
 
-.info__link:hover,
+.info__link:hover {
+  color: var(--accent-color);
+}
+
 .info__link:focus {
   color: var(--accent-color);
 }
@@ -204,7 +210,7 @@ img {
   background-size: cover;
 }
 
-.hero .title {
+.hero__title {
   width: 696px;
   margin-top: 0;
   margin-right: auto;
@@ -221,7 +227,7 @@ img {
   color: var(--primary-bg-color);
 }
 
-.hero-button {
+.hero__btn {
   padding: 10px 24px;
   border: none;
   border-radius: 4px;
@@ -239,12 +245,12 @@ img {
   transition: color 250ms var(--hover-focus-time);
 }
 
-.hero-button:hover {
+.hero__btn:hover {
   cursor: pointer;
   color: var(--hero-bg-color);
 }
 
-.hero .backdrop {
+.backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -269,7 +275,7 @@ img {
 
 /* Модальне вікно */
 
-.backdrop .data-modal {
+.modal-window {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -285,11 +291,11 @@ img {
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 
-.backdrop.is-hidden > .data-modal {
+.backdrop.is-hidden > .modal-window {
   transform: translate(-50%, -50%) scaleX(0);
 }
 
-.data-modal .data-modal-close {
+.modal-window-close-btn {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -305,7 +311,7 @@ img {
   cursor: pointer;
 }
 
-.data-modal-close-icon {
+.modal-window-close-icon {
   display: block;
   margin: 0 auto;
 
@@ -314,7 +320,7 @@ img {
   transition: fill 250ms var(--hover-focus-time);
 }
 
-.data-modal-close:hover > .data-modal-close-icon {
+.modal-window-close-btn:hover > .modal-window-close-icon {
   fill: var(--accent-color);
 }
 
@@ -328,7 +334,7 @@ img {
   height: 100%;
 }
 
-.form-title {
+.modal-form__title {
   display: block;
 
   margin-top: 0;
@@ -342,12 +348,12 @@ img {
   color: var(--secondary-text-color);
 }
 
-.form-field {
+.modal-form__field {
   position: relative;
   display: block;
 }
 
-.form-field-label {
+.modal-form__label {
   display: block;
 
   margin-bottom: 4px;
@@ -360,7 +366,7 @@ img {
   color: var(--primary-text-color);
 }
 
-.form-field-input {
+.modal-form__input {
   display: block;
 
   margin-bottom: 10px;
@@ -376,7 +382,7 @@ img {
   transition: border-color 250ms var(--hover-focus-time);
 }
 
-.form-field-icon {
+.modal-form__icon {
   position: absolute;
   top: 30px;
   left: 12px;
@@ -386,17 +392,17 @@ img {
   transition: fill 250ms var(--hover-focus-time);
 }
 
-.form-field-input:focus {
+.modal-form__input:focus {
   border-color: var(--accent-color);
 }
 
-.form-field-input:focus + .form-field-icon {
+.modal-form__input:focus + .modal-form__icon {
   fill: var(--accent-color);
 }
 
 /* Textarea */
 
-.form-textarea {
+.modal-form__textarea {
   display: block;
 
   margin-bottom: 20px;
@@ -413,7 +419,7 @@ img {
   transition: border-color 250ms var(--hover-focus-time);
 }
 
-.form-textarea::placeholder {
+.modal-form__textarea::placeholder {
   font-size: 12px;
   font-weight: 400;
   letter-spacing: 0.12px;
@@ -421,13 +427,13 @@ img {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.form-textarea:focus {
+.modal-form__textarea:focus {
   border-color: var(--accent-color);
 }
 
 /* Checkbox */
 
-.checkbox-label {
+.modal-form__policy {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -445,7 +451,7 @@ img {
   color: var(--primary-text-color);
 }
 
-.checkbox-icon {
+.modal-form__checkbox-custom {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -461,22 +467,22 @@ img {
     border-color 250ms var(--hover-focus-time);
 }
 
-.checkbox:focus + .checkbox-icon {
+.modal-form__checkbox:focus + .modal-form__checkbox-custom {
   border-color: var(--accent-color);
 }
 
-.checkbox:checked + .checkbox-icon {
+.modal-form__checkbox:checked + .modal-form__checkbox-custom {
   border-color: transparent;
   background-color: var(--accent-color);
   background-size: contain;
   background-origin: border-box;
 }
 
-.icon-check {
+.modal-form__checkbox-icon {
   display: block;
 }
 
-.checkbox-link {
+.modal-form__checkbox-link {
   margin-left: 5px;
 
   font-size: 14px;
@@ -487,7 +493,7 @@ img {
   color: var(--accent-color);
 }
 
-.modal-form .modal-form-btn {
+.modal-form__btn {
   padding: 10px 52px;
 
   width: 200px;
