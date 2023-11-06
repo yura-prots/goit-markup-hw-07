@@ -632,8 +632,7 @@ img {
   background-color: var(--secondary-bg-color);
 }
 
-.team .title,
-.clients .title {
+.team__title {
   margin-top: 0;
   margin-bottom: 50px;
 
@@ -646,28 +645,30 @@ img {
   color: var(--secondary-text-color);
 }
 
-.team .list {
+.team__list {
   display: flex;
 }
 
-.team .item {
+.team__item {
   background-color: var(--primary-bg-color);
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 
-.team .item:not(:last-child) {
+.team__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.team .card {
-  padding-top: 30px;
+.card {
   padding-bottom: 30px;
 }
 
-.team .card-title {
-  margin-top: 0;
+.card__img {
+  margin-bottom: 30px;
+}
+
+.card__title {
   margin-bottom: 10px;
 
   font-size: 16px;
@@ -679,7 +680,7 @@ img {
   color: var(--secondary-text-color);
 }
 
-.team .card-text {
+.card__text {
   margin: 0;
   margin-bottom: 16px;
 
@@ -692,16 +693,17 @@ img {
   color: var(--primary-text-color);
 }
 
-.team .socials {
+.socials {
+  display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.team .socials-item:not(:last-child) {
+.socials__item:not(:last-child) {
   margin-right: 10px;
 }
 
-.socials-link {
+.socials__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -713,12 +715,15 @@ img {
   transition: background-color 250ms var(--hover-focus-time);
 }
 
-.socials-link:hover,
-.socials-link:focus {
+.socials__link:hover {
   background-color: var(--accent-color);
 }
 
-.socials-icon {
+.socials__link:focus {
+  background-color: var(--accent-color);
+}
+
+.socials__icon {
   margin: 0;
 
   fill: var(--primary-icon-color);
@@ -726,12 +731,28 @@ img {
   transition: fill 250ms var(--hover-focus-time);
 }
 
-.socials-link:hover .socials-icon,
-.socials-link:focus .socials-icon {
+.socials__link:hover .socials__icon {
+  fill: var(--primary-bg-color);
+}
+
+.socials__link:focus .socials__icon {
   fill: var(--primary-bg-color);
 }
 
 /* Постійні клієнти */
+
+.clients .title {
+  margin-top: 0;
+  margin-bottom: 50px;
+
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 1.08px;
+  text-align: center;
+
+  color: var(--secondary-text-color);
+}
 
 .clients-list {
   display: flex;
