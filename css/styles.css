@@ -91,6 +91,8 @@ img {
   margin-right: 93px;
 }
 
+/* Навігація */
+
 .nav__list {
   display: flex;
 }
@@ -141,6 +143,8 @@ img {
   border-radius: 2px;
   background-color: var(--accent-color);
 }
+
+/* Контакти */
 
 .info {
   display: flex;
@@ -575,9 +579,7 @@ img {
   padding-top: 0;
 }
 
-.examples .title,
-.team .title,
-.clients .title {
+.examples__title {
   margin-top: 0;
   margin-bottom: 50px;
 
@@ -590,11 +592,19 @@ img {
   color: var(--secondary-text-color);
 }
 
-.examples-img-box {
+.examples__list {
+  display: flex;
+}
+
+.examples__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.examples__img {
   position: relative;
 }
 
-.examples-img-text {
+.examples__text {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -616,18 +626,24 @@ img {
   opacity: 80%;
 }
 
-.examples .list {
-  display: flex;
-}
-
-.examples .item:not(:last-child) {
-  margin-right: 30px;
-}
-
 /* Наша команда */
 
 .team {
   background-color: var(--secondary-bg-color);
+}
+
+.team .title,
+.clients .title {
+  margin-top: 0;
+  margin-bottom: 50px;
+
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 1.08px;
+  text-align: center;
+
+  color: var(--secondary-text-color);
 }
 
 .team .list {
