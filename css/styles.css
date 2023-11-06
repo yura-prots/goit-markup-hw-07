@@ -516,19 +516,19 @@ img {
 
 /* Особливості */
 
-.features .list {
+.features__list {
   display: flex;
 }
 
-.features .item {
+.features__item {
   width: 270px;
 }
 
-.features .item:not(:last-child) {
+.features__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.features .icon-box {
+.features__icon-box {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -541,11 +541,11 @@ img {
   background-color: var(--secondary-bg-color);
 }
 
-.features .icon {
+.features__icon {
   margin: 0;
 }
 
-.features .title {
+.features__title {
   margin-top: 0;
   margin-bottom: 10;
 
@@ -558,7 +558,7 @@ img {
   color: var(--secondary-text-color);
 }
 
-.features .text {
+.features__text {
   margin: 0;
 
   font-size: 14px;
