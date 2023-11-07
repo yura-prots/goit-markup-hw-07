@@ -2,21 +2,37 @@
 @import './utils/vars';
 
 // components
-@import './components/header';
-@import './components/logo';
-@import './components/nav';
-@import './components/info';
-@import './components/hero';
-@import './components/backdrop';
-@import './components/modal-window';
-@import './components/modal-form';
-@import './components/features';
-@import './components/examples';
-@import './components/team';
-@import './components/card';
-@import './components/socials';
-@import './components/clients';
-@import './components/filter';
-@import './components/works';
-@import './components/footer';
-@import './components/footer-form';
+
+// header
+@import './components/header/header';
+@import './components/header/logo';
+@import './components/header/nav';
+@import './components/header/info';
+
+// hero
+@import './components/hero/hero';
+@import './components/hero/backdrop';
+@import './components/hero/modal-window';
+@import './components/hero/modal-form';
+
+// features
+@import './components/features/features';
+
+// examples
+@import './components/examples/examples';
+
+// team
+@import './components/team/team';
+@import './components/team/card';
+@import './components/team/socials';
+
+// clients
+@import './components/clients/clients';
+
+// portfolio
+@import './components/portfolio/filter';
+@import './components/portfolio/works';
+
+// footer
+@import './components/footer/footer';
+@import './components/footer/footer-form';
