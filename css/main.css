@@ -14,6 +14,20 @@
   --hover-focus-time: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -25,20 +39,13 @@ body {
   color: var(--primary-text-color);
 }
 
-img {
-  display: block;
-}
-
-.container {
-  width: 1200px;
-  margin: 0 auto;
-  padding-right: 15px;
-  padding-left: 15px;
-}
-
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+img {
+  display: block;
 }
 
 .list {
@@ -49,6 +56,13 @@ img {
 
 .link {
   text-decoration: none;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .btn {
@@ -69,20 +83,6 @@ img {
   -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   cursor: pointer;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
 
 .header {
