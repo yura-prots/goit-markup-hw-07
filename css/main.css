@@ -85,7 +85,7 @@ img {
   cursor: pointer;
 }
 
-.header {
+.header--bordered {
   border-bottom: 1px solid var(--header-underline-color);
 }
 
