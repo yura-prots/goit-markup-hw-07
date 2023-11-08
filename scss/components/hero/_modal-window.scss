@@ -12,12 +12,12 @@
     background-color: var(--primary-bg-color);
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
       0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
+    .backdrop.is-hidden > & {
+      transform: translate(-50%, -50%) scaleX(0);
+    }
   }
-  
-  .backdrop.is-hidden > .modal-window {
-    transform: translate(-50%, -50%) scaleX(0);
-  }
-  
+    
   .modal-window-close-btn {
     position: absolute;
     top: 8px;
@@ -41,8 +41,10 @@
     fill: var(--logo-black-color);
   
     transition: fill 250ms var(--hover-focus-time);
-  }
-  
-  .modal-window-close-btn:hover > .modal-window-close-icon {
+
+    .modal-window-close-btn:hover > & {
     fill: var(--accent-color);
   }
+  }
+  
+  

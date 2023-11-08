@@ -13,10 +13,11 @@
     visibility: visible;
     transition: opacity 250ms var(--hover-focus-time),
       visibility 250ms var(--hover-focus-time);
+
+    &.is-hidden {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
   }
   
-  .backdrop.is-hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-  }

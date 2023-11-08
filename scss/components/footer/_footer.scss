@@ -1,7 +1,8 @@
 .footer {
-    background-color: var(--footer-bg-color);
-    padding-top: 60px;
-    padding-bottom: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: var(--footer-bg-color);
   }
   
   .footer__container {
@@ -24,11 +25,8 @@
   
     width: 207px;
   
-    font-style: normal;
-    font-size: 14px;
-    font-weight: 400;
     line-height: 1.71;
-    letter-spacing: 0.42px;
+    font-style: normal;
   
     color: var(--primary-bg-color);
   }
@@ -41,44 +39,32 @@
   .address__link {
     margin-bottom: 12px;
   
-    font-size: 14px;
-    font-weight: 400;
     line-height: 1.71;
-    letter-spacing: 0.42px;
+    text-align: left;
     text-decoration: none;
   
     color: var(--address-text-color);
   
     transition: color 250ms var(--hover-focus-time);
-  }
-  
-  .address__link:hover {
-    color: var(--accent-color);
-  }
-  
-  .address__link:focus {
-    color: var(--accent-color);
-  }
-  
-  .address__link:last-child {
-    margin-bottom: 0;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
   }
   
   .socials__title {
     margin-bottom: 20px;
   
-    font-size: 14px;
     font-weight: 700;
-    letter-spacing: 0.42px;
+    text-align: left;
     text-transform: uppercase;
     color: var(--primary-bg-color);
   }
   
-  .socials__item--black {
-    border-radius: 50%;
-    background-color: var(--footer-icon-bg-color);
-  }
+
   
-  .socials__icon--white {
-    fill: var(--primary-bg-color);
-  }

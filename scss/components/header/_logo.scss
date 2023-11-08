@@ -13,6 +13,8 @@
     color: var(--accent-color);
   }
   
-  .logo__text--black {
-    color: var(--logo-black-color);
+  .logo__text {
+    &--black {
+      color: var(--logo-black-color);
+    }
   }

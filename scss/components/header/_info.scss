@@ -4,8 +4,10 @@
     margin-left: auto;
   }
   
-  .info__item:not(:last-child) {
-    margin-right: 40px;
+  .info__item {
+    &:not(:last-child) {
+      margin-right: 40px;
+    }
   }
   
   .info__link {
@@ -15,7 +17,6 @@
     padding-top: 32px;
     padding-bottom: 32px;
   
-    font-size: 14px;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.28px;
@@ -23,14 +24,11 @@
     color: var(--primary-text-color);
   
     transition: color 250ms var(--hover-focus-time);
-  }
-  
-  .info__link:hover {
-    color: var(--accent-color);
-  }
-  
-  .info__link:focus {
-    color: var(--accent-color);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
   }
   
   .info__icon {

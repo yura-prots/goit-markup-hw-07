@@ -7,9 +7,8 @@
   
     margin-bottom: 20px;
   
-    font-size: 14px;
     font-weight: 700;
-    letter-spacing: 0.42px;
+    text-align: left;
     text-transform: uppercase;
     color: var(--primary-bg-color);
   }
@@ -37,10 +36,10 @@
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   
     transition: border-color 250ms var(--hover-focus-time);
-  }
-  
-  .form__input:focus {
-    border-color: var(--accent-color);
+
+    &:focus {
+      border-color: var(--accent-color);
+    }
   }
   
   .form__btn {

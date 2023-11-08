@@ -6,7 +6,6 @@
     font-weight: 700;
     line-height: 1.2;
     letter-spacing: 1.08px;
-    text-align: center;
   
     color: var(--secondary-text-color);
   }
@@ -15,8 +14,10 @@
     display: flex;
   }
   
-  .clients__item:not(:last-child) {
-    margin-right: 30px;
+  .clients__item {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
   }
   
   .clients__link {
@@ -31,26 +32,26 @@
     border: 1px solid var(--primary-icon-color);
   
     transition: border-color 250ms var(--hover-focus-time);
+
+      &:hover,
+      &:focus {
+        border-color: var(--accent-color);
+      }
   }
-  
-  .clients__link:hover {
-    border-color: var(--accent-color);
-  }
-  
-  .clients__link:focus {
-    border-color: var(--accent-color);
-  }
+
   
   .clients__icon {
     fill: var(--primary-icon-color);
   
     transition: fill 250ms var(--hover-focus-time);
+
+    .clients__link:hover & {
+      fill: var(--accent-color);
+    }
+
+    .clients__link:focus & {
+      fill: var(--accent-color);
+    }
   }
   
-  .clients__link:hover .clients__icon {
-    fill: var(--accent-color);
-  }
-  
-  .clients__link:focus .clients__icon {
-    fill: var(--accent-color);
-  }
+ 
