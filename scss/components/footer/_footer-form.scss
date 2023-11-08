@@ -44,6 +44,8 @@
   }
   
   .form__btn {
+    @include btn;
+
     display: flex;
     align-items: center;
     justify-content: center;

@@ -41,12 +41,13 @@
   }
   
   .hero__btn {
+    @include btn;
+
     width: 216px;
   
-    transition: color 250ms var(--hover-focus-time);
+    &:hover {
+      color: var(--hero-bg-color);
+    }
   }
   
-  .hero__btn:hover {
-    cursor: pointer;
-    color: var(--hero-bg-color);
-  }
+  
