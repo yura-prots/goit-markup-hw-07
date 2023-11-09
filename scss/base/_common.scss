@@ -3,8 +3,12 @@ html {
   }
   
 body {
-    @include fonts;
-  
+    font-family: var(--primary-font-family);
+    font-size: var(--primary-font-size);
+    font-weight: var(--primary-font-weight);
+    letter-spacing: var(--primary-letter-spacing);
+    text-align: var(--primary-text-align);
+
     background-color: var(--primary-bg-color);
     color: var(--primary-text-color);
   }
