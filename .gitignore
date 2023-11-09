@@ -1,7 +1,3 @@
 .sass-cach*
-*.css.map
 *.sass.map
 *.scss.map
-
-main.css
-main.css.map
